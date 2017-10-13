@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="Goku.WebService.Api" />
         <module name="Goku.WebService.Business" />
+        <module name="Goku.Webservice.Mybatis-generator" />
         <module name="Goku.WebService.Provider" />
         <module name="Goku.WebService.Util" />
         <module name="Goku.WebService.util" />
@@ -34,6 +35,7 @@
       <module name="Goku.WebService" target="1.5" />
       <module name="Goku.WebService.Api" target="1.5" />
       <module name="Goku.WebService.Business" target="1.5" />
+      <module name="Goku.Webservice.Mybatis-generator" target="1.5" />
       <module name="Goku.WebService.Provider" target="1.5" />
       <module name="Goku.WebService.Util" target="1.5" />
       <module name="Goku.WebService.util" target="1.5" />

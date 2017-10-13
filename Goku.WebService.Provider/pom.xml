@@ -6,6 +6,7 @@
         <artifactId>Goku.WebService</artifactId>
         <groupId>Goku.WebService</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -20,6 +21,11 @@
         <dependency>
             <groupId>Goku.WebService</groupId>
             <artifactId>Goku.WebService.Business</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>Goku.WebService</groupId>
+            <artifactId>Goku.WebService.Util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
