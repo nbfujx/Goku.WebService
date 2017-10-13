@@ -14,7 +14,6 @@
         <module>Goku.WebService.Provider</module>
         <module>Goku.WebService.Webapi</module>
         <module>Goku.WebService.Util</module>
-        <module>Goku.Webservice.Mybatis-generator</module>
     </modules>
     <name>Goku.WebService</name>
     <url>http://maven.apache.org</url>
