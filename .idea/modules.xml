@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/Goku.WebService.Provider/Goku.WebService.Provider.iml" filepath="$PROJECT_DIR$/Goku.WebService.Provider/Goku.WebService.Provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/Goku.WebService.Util/Goku.WebService.Util.iml" filepath="$PROJECT_DIR$/Goku.WebService.Util/Goku.WebService.Util.iml" />
       <module fileurl="file://$PROJECT_DIR$/Goku.WebService.Webapi/Goku.WebService.Webapi.iml" filepath="$PROJECT_DIR$/Goku.WebService.Webapi/Goku.WebService.Webapi.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Goku.Webservice.Mybatis-generator/Goku.Webservice.Mybatis-generator.iml" filepath="$PROJECT_DIR$/Goku.Webservice.Mybatis-generator/Goku.Webservice.Mybatis-generator.iml" />
     </modules>
   </component>
 </project>
