@@ -36,7 +36,7 @@
       <module name="Goku.WebService.Business" target="1.6" />
       <module name="Goku.Webservice.Generate" target="1.5" />
       <module name="Goku.Webservice.Mybatis-generator" target="1.5" />
-      <module name="Goku.WebService.Provider" target="1.5" />
+      <module name="Goku.WebService.Provider" target="1.6" />
       <module name="Goku.WebService.Util" target="1.5" />
       <module name="Goku.WebService.util" target="1.5" />
       <module name="Goku.WebService.Webapi" target="1.5" />

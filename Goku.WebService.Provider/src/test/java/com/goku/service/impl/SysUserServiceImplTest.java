@@ -1,8 +1,6 @@
-package com.goku.handle.impl;
+package com.goku.service.impl;
 
-import com.goku.mapper.sysUserMapper;
 import com.goku.model.sysUser;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -15,7 +13,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations ="classpath:spring-mybatis.xml")
-public class sysUserHandleImplTest extends sysUserHandleImpl {
+public class SysUserServiceImplTest extends SysUserServiceImpl {
 
     @Test
     public void selectByid() throws Exception {
