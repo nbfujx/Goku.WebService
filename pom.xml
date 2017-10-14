@@ -14,7 +14,6 @@
         <module>Goku.WebService.Provider</module>
         <module>Goku.WebService.Webapi</module>
         <module>Goku.WebService.Util</module>
-        <module>Goku.Webservice.Generate</module>
     </modules>
     <name>Goku.WebService</name>
     <url>http://maven.apache.org</url>
@@ -37,9 +36,12 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <!-- 表示开发的时候引入，发布的时候不会加载此包 -->
-            <scope>test</scope>
+            <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${srping.version}</version>
         </dependency>
         <!-- java ee包 -->
         <dependency>
@@ -81,6 +83,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <version>${srping.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
             <version>${srping.version}</version>
         </dependency>
         <dependency>
