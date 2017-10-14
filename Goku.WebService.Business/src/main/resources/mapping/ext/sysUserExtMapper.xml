@@ -8,7 +8,7 @@
         <result column="name" jdbcType="VARCHAR" property="name" />
         <result column="sex" jdbcType="VARCHAR" property="sex" />
         <result column="status" jdbcType="CHAR" property="status" />
-        <result column="orgid" jdbcType="VARCHAR" property="orgid" />
+        <result column="org_id" jdbcType="VARCHAR" property="orgId" />
         <result column="email" jdbcType="VARCHAR" property="email" />
         <result column="idcard" jdbcType="VARCHAR" property="idcard" />
         <result column="is_admin" jdbcType="VARCHAR" property="isAdmin" />
@@ -16,7 +16,7 @@
         <result column="mobile" jdbcType="VARCHAR" property="mobile" />
     </resultMap>
     <sql id="Base_Ext_Column_List">
-        id, username, password, name, sex, status, orgid, email, idcard, is_admin, sort,
+        id, username, password, name, sex, status, org_id, email, idcard, is_admin, sort,
         mobile
     </sql>
     <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultExtMap">
