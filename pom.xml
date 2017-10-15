@@ -127,6 +127,11 @@
             <artifactId>mybatis-spring</artifactId>
             <version>1.2.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>3.7.5</version>
+        </dependency>
         <!-- mybatis框架包 end -->
         <!-- 数据库驱动 -->
         <dependency>

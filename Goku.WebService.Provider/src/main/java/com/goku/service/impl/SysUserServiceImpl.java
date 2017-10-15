@@ -1,11 +1,15 @@
 package com.goku.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.goku.handle.sysUserHandle;
 import com.goku.model.sysUser;
 import com.goku.service.sysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -26,6 +30,20 @@ public class SysUserServiceImpl implements sysUserService {
     @Override
     public sysUser selectByid(String id) {
         return sysuserhandle.selectByid(id);
+    }
+
+    @Override
+    public List<Map<String, String>> selectUserByOrgid(String orgid,Integer pageNo,Integer pageSize,String orderSort,String orderFiled) {
+        PageHelper.startPage(pageNo, pageSize);
+        List<Map<String, String>> userall= sysuserhandle.selectUserByOrgid(orgid,orderSort,orderFiled);
+        PageInfo<Map<String, String>> pageInfo =new PageInfo(userall);
+        List<Map<String, String>> users=pageInfo.getList();
+        return users;
+    }
+
+    @Override
+    public Map<String, String> selectUserByUsername(String username) {
+        return sysuserhandle.selectUserByUsername(username);
     }
 
 }

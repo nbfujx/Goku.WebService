@@ -9,6 +9,8 @@ import com.goku.mapper.ext.sysUserExtMapper;
 import com.goku.mapper.sysUserMapper;
 import com.goku.model.sysUser;
 
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -31,6 +33,17 @@ public class sysUserHandleImpl implements sysUserHandle {
     @Override
     public sysUser selectByid(String id) {
         return sysusermapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public List<Map<String, String>> selectUserByOrgid(String orgid,String orderSort,String orderFiled) {
+        return sysuserextmapper.selectUserByOrgid(orgid,orderSort,orderFiled);
+    }
+
+    @Override
+    public Map<String, String> selectUserByUsername(String username) {
+
+        return sysuserextmapper.selectUserByUsername(username);
     }
 
 }
