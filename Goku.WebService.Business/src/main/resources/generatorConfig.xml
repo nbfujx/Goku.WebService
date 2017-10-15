@@ -21,7 +21,7 @@
         </javaTypeResolver>
 
         <!-- !!!! Model Configurations !!!! -->
-        <javaModelGenerator targetPackage="com.goku.model" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.goku.com.goku.model" targetProject="src/main/java">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>

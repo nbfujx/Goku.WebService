@@ -3,7 +3,7 @@ package com.goku.service.impl;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.goku.handle.sysUserHandle;
+import com.goku.handler.sysUserHandle;
 import com.goku.model.sysUser;
 import com.goku.service.sysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,11 +16,10 @@ import java.util.Map;
  * Created by nbfujx on 2017/10/14.
  */
 @Service
-public class SysUserServiceImpl implements sysUserService {
+public class sysUserServiceImpl implements sysUserService {
 
     @Autowired
     private sysUserHandle sysuserhandle;
-
 
     @Override
     public sysUser selectByUsername(String username) {

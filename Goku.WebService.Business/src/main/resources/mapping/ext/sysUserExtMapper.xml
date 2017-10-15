@@ -36,7 +36,7 @@
     <select id="selectUserByOrgid"  resultType="java.util.HashMap">
         select  username,password from sys_user where org_id = #{orgid,jdbcType=VARCHAR}
         <if test="orderFiled != null" >
-            ORDER BY  ${orderFiled}
+            order by  ${orderFiled}
             <if test="orderSort != null" >
                 ${orderSort}
             </if>

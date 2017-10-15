@@ -1,10 +1,10 @@
-package com.goku.handle.impl;
+package com.goku.handler.impl;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.goku.handle.sysUserHandle;
+import com.goku.handler.sysUserHandle;
 import com.goku.mapper.ext.sysUserExtMapper;
 import com.goku.mapper.sysUserMapper;
 import com.goku.model.sysUser;

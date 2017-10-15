@@ -40,7 +40,7 @@
 
         <!-- 验证连接有效与否的SQL，不同的数据配置不同 -->
         <property name="validationQuery" value="select 1 " />
-        <property name="filters" value="stat" />
+        <property name="filters" value="stat,log4j" />
         <property name="proxyFilters">
             <list>
                 <ref bean="logFilter" />
@@ -95,7 +95,7 @@
     <!-- 采用注释的方式配置bean -->
     <context:annotation-config />
     <!-- 自动扫描 -->
-    <context:component-scan base-package="com.goku.handle,com.goku.mapper" />
+    <context:component-scan base-package="com.goku.handler,com.goku.mapper" />
     <!-- dubbo协议的包 -->
     <dubbo:annotation package="com.goku.service" />
 

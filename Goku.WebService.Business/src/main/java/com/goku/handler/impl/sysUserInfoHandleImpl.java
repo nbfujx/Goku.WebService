@@ -1,6 +1,6 @@
-package com.goku.handle.impl;
+package com.goku.handler.impl;
 
-import com.goku.handle.sysUserInfoHandle;
+import com.goku.handler.sysUserInfoHandle;
 
 /**
  * Created by nbfujx on 2017/10/14.

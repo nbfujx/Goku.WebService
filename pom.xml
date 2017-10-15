@@ -12,8 +12,9 @@
         <module>Goku.WebService.Business</module>
         <module>Goku.WebService.Api</module>
         <module>Goku.WebService.Provider</module>
-        <module>Goku.WebService.Webapi</module>
         <module>Goku.WebService.Util</module>
+        <module>Goku.WebService.Webapi</module>
+        <module>Goku.WebService.Model</module>
     </modules>
     <name>Goku.WebService</name>
     <url>http://maven.apache.org</url>
@@ -115,6 +116,16 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${srping.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
+            <version>${srping.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-messaging</artifactId>
+            <version>${srping.version}</version>
+        </dependency>
         <!-- spring框架包 end -->
         <!-- mybatis框架包 start -->
         <dependency>
@@ -139,11 +150,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.35</version>
         </dependency>
-        <!-- 导入dbcp的jar包，用来在applicationContext.xml中配置数据库 -->
+        <!-- 导入druid的jar包，用来在applicationContext.xml中配置数据库 -->
         <dependency>
-            <groupId>commons-dbcp</groupId>
-            <artifactId>commons-dbcp</artifactId>
-            <version>1.4</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.27</version>
         </dependency>
         <!-- jstl标签类 -->
         <dependency>
@@ -207,17 +218,6 @@
             <version>1.10</version>
         </dependency>
         <!-- 上传组件包 end -->
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-websocket</artifactId>
-            <version>${srping.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-messaging</artifactId>
-            <version>${srping.version}</version>
-        </dependency>
         <!-- 定时器的使用 -->
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
@@ -285,11 +285,6 @@
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>1.7.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.0.27</version>
         </dependency>
         <dependency>
             <groupId>org.log4mongo</groupId>
@@ -369,6 +364,13 @@
             <groupId>org.springframework.amqp</groupId>
             <artifactId>spring-rabbit</artifactId>
             <version>${spring-rabbit.version}</version>
+        </dependency>
+
+        <!-- spring-boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>1.5.6.RELEASE</version>
         </dependency>
 
         <dependency>

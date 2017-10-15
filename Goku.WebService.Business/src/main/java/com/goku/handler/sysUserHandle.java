@@ -1,4 +1,4 @@
-package com.goku.handle;
+package com.goku.handler;
 
 import com.goku.model.sysUser;
 

@@ -49,6 +49,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Goku.WebService.Webapi/pom.xml" />
         <option value="$PROJECT_DIR$/Goku.Webservice.Generate/pom.xml" />
         <option value="$PROJECT_DIR$/Goku.Webservice.Mybatis-generator/pom.xml" />
       </set>

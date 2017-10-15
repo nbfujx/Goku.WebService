@@ -1,10 +1,7 @@
 package test.com.goku.provider;
 
-import com.goku.service.impl.SysUserServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import javax.persistence.criteria.CriteriaBuilder;
 
 /**
  * Created by nbfujx on 2017/10/14.
