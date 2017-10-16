@@ -215,5 +215,7 @@
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger-ui:2.4.0" level="project" />
+    <orderEntry type="library" name="Maven: com.mangofactory:swagger-springmvc:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.mangofactory:swagger-models:1.0.2" level="project" />
   </component>
 </module>

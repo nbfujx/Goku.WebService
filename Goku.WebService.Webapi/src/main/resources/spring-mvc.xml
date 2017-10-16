@@ -8,6 +8,8 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
 
 
+    <bean class="com.goku.webapi.config.SwaggerConfig" />
+
     <!-- 自动扫描且只扫描@Controller -->
     <context:component-scan base-package="com.goku.webapi.controller"> </context:component-scan>
 
@@ -48,5 +50,7 @@
             <ref bean= "fastJsonHttpMessageConverter" />
         </mvc:message-converters>
     </mvc:annotation-driven >
+
+    <mvc:resources mapping="/swagger/**" location="/WEB-INF/swagger/"/>
 
 </beans>
