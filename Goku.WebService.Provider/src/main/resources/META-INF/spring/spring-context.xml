@@ -43,7 +43,8 @@
         <property name="filters" value="stat,log4j" />
         <property name="proxyFilters">
             <list>
-                <ref bean="logFilter" />
+                <ref bean="stat-filter" />
+                <ref bean="log-filter"/>
             </list>
         </property>
     </bean>
@@ -84,8 +85,13 @@
                           proxy-target-class="true" />
 
 
-    <bean id="logFilter" class="com.alibaba.druid.filter.logging.Slf4jLogFilter">
-        <property name="statementExecutableSqlLogEnable" value="false" />
+    <bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter">
+        <property name="slowSqlMillis" value="10000" />
+        <property name="logSlowSql" value="true" />
+    </bean>
+
+    <bean id="log-filter" class="com.alibaba.druid.filter.logging.Log4jFilter">
+        <property name="statementExecutableSqlLogEnable" value="true" />
     </bean>
 
     <dubbo:application name="Goku.Webservice-Provider"  owner="programmer" />
