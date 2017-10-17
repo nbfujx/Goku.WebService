@@ -1,5 +1,7 @@
 package com.goku.webapi.handler;
 
+import com.goku.model.sysUser;
+
 import java.util.List;
 import java.util.Map;
 
@@ -8,4 +10,5 @@ import java.util.Map;
  */
 public interface sysUserHandler {
     List<Map<String, String>> selectUserByOrgid(String orgid, Integer pageNo, Integer pageSize, String orderSort, String orderFiled);
+    sysUser selectByid(String id);
 }
