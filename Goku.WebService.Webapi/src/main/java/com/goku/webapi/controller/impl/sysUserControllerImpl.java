@@ -3,6 +3,8 @@ package com.goku.webapi.controller.impl;
 import com.goku.webapi.controller.sysUserController;
 import com.goku.webapi.handler.sysUserHandler;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
