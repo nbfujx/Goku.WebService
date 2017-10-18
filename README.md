@@ -3,7 +3,7 @@
 
 框架架构图：
 
-![架构图](https://github.com/nbfujx/Goku.WebService/blob/master/Docs/架构.png  =400x300)
+![架构图](https://github.com/nbfujx/Goku.WebService/blob/master/Docs/架构.png)
 
 
 
