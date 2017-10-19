@@ -15,7 +15,7 @@
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:mybatis.properties" />
+        <property name="location" value="classpath:conf/mybatis.properties" />
     </bean>
 
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"

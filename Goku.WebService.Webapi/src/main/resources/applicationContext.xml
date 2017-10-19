@@ -24,6 +24,9 @@
     <dubbo:reference id="loginService" interface="com.goku.service.loginService"/>
 
     <!-- shiro配置相关 -->
-    <import resource="spring-shiro.xml" />
+    <import resource="spring/spring-shiro.xml" />
+
+    <!-- redis配置相关 -->
+    <import resource="spring/spring-redis.xml" />
 
 </beans>
