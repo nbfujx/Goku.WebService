@@ -3,7 +3,7 @@
 
 # 服务架构图：
 
-![架构图](https://gitee.com/uploads/images/2017/1102/125400_3e4d0b00_600957.png "架构.png")
+![架构图](https://github.com/nbfujx/Goku.WebService/blob/master/Docs/架构.png)
 
 # 服务框架说明：
 | **技术** |  **名称**| 
