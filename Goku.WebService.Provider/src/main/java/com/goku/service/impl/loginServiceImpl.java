@@ -14,10 +14,5 @@ public class loginServiceImpl implements loginService {
     @Autowired
     private loginHandle loginhandle;
 
-    @Override
-    public boolean validUser(String username, String password, String orgid) {
-        return loginhandle.validUser(username,password,orgid);
-    }
-
 
 }

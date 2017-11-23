@@ -22,13 +22,13 @@ public class sysUserServiceImpl implements sysUserService {
     private sysUserHandle sysuserhandle;
 
     @Override
-    public sysUser selectByUsername(String username) {
-        return sysuserhandle.selectByUsername(username);
+    public sysUser selectByid(String id) {
+        return sysuserhandle.selectByid(id);
     }
 
     @Override
-    public sysUser selectByid(String id) {
-        return sysuserhandle.selectByid(id);
+    public sysUser selectByUsername(String username) {
+        return sysuserhandle.selectByUsername(username);
     }
 
     @Override
@@ -40,9 +40,5 @@ public class sysUserServiceImpl implements sysUserService {
         return users;
     }
 
-    @Override
-    public Map<String, String> selectUserByUsername(String username) {
-        return sysuserhandle.selectUserByUsername(username);
-    }
 
 }

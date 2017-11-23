@@ -40,10 +40,5 @@ public class sysUserHandleImpl implements sysUserHandle {
         return sysuserextmapper.selectUserByOrgid(orgid,orderSort,orderFiled);
     }
 
-    @Override
-    public Map<String, String> selectUserByUsername(String username) {
-
-        return sysuserextmapper.selectUserByUsername(username);
-    }
 
 }

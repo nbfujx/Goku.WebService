@@ -15,16 +15,5 @@ public class loginHandleImpl  implements loginHandle {
     @Autowired
     private sysUserExtMapper sysuserextmapper;
 
-    @Override
-    public boolean validUser(String username, String password, String orgid) {
-        sysUser sysUser=sysuserextmapper.validUser(username,password,orgid);
-        if(sysUser==null)
-        {
-            return  false;
-        }else
-        {
-            return true;
-        }
-    }
 
 }

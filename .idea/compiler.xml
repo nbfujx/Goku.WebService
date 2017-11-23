@@ -36,9 +36,9 @@
       <module name="Goku.WebService.Api" target="1.5" />
       <module name="Goku.WebService.Business" target="1.6" />
       <module name="Goku.WebService.Model" target="1.5" />
-      <module name="Goku.WebService.Provider" target="1.6" />
+      <module name="Goku.WebService.Provider" target="1.5" />
       <module name="Goku.WebService.Util" target="1.5" />
-      <module name="Goku.WebService.Webapi" target="1.6" />
+      <module name="Goku.WebService.Webapi" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

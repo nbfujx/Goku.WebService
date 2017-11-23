@@ -12,5 +12,4 @@ public interface sysUserService {
     sysUser selectByUsername(String username);
     sysUser selectByid(String id);
     List<Map<String, String>> selectUserByOrgid(String orgid,Integer pageNo,Integer pageSize,String orderSort,String orderFiled);
-    Map<String, String> selectUserByUsername( String username);
 }

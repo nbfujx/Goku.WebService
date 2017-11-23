@@ -25,14 +25,6 @@
         from sys_user
         where username = #{username,jdbcType=VARCHAR}
     </select>
-    <select id="validUser"  resultMap="BaseResultExtMap">
-        select
-        <include refid="Base_Ext_Column_List" />
-        from sys_user
-        where username = #{username,jdbcType=VARCHAR}
-        and password = #{password,jdbcType=VARCHAR}
-        and org_id = #{orgid,jdbcType=VARCHAR}
-    </select>
     <select id="selectUserByOrgid"  resultType="java.util.HashMap">
         select  username,password from sys_user where org_id = #{orgid,jdbcType=VARCHAR}
         <if test="orderFiled != null" >
@@ -41,8 +33,5 @@
                 ${orderSort}
             </if>
         </if>
-    </select>
-    <select id="selectUserByUsername"  resultType="java.util.HashMap">
-        select  username,password from sys_user where username = #{username,jdbcType=VARCHAR}
     </select>
 </mapper>

@@ -9,8 +9,7 @@ import java.util.Map;
  * Created by nbfujx on 2017/10/14.
  */
 public interface sysUserHandle {
-    sysUser selectByUsername(String username);
     sysUser selectByid(String id);
+    sysUser selectByUsername(String username);
     List<Map<String, String>> selectUserByOrgid(String orgid,String orderSort,String orderFiled);
-    Map<String, String> selectUserByUsername( String username);
 }
