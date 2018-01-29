@@ -6,7 +6,7 @@ import com.goku.service.sysUserInfoService;
 /**
  * Created by nbfujx on 2017/10/14.
  */
-@Service
+@Service(version = "1.0.0")
 public class sysUserInfoServiceImpl implements sysUserInfoService {
 
 }

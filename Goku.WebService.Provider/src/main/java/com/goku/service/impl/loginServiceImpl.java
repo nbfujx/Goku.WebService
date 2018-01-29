@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * Created by nbfujx on 2017/10/15.
  */
-@Service
+@Service(version = "1.0.0")
 public class loginServiceImpl implements loginService {
 
     @Autowired
