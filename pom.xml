@@ -14,7 +14,7 @@
         <module>Goku.WebService.Provider</module>
         <module>Goku.WebService.Util</module>
         <module>Goku.WebService.Model</module>
-        <module>Goku.WebService.WebService</module>
+        <module>Goku.WebService.WebApi</module>
     </modules>
     <name>Goku.WebService</name>
     <url>http://maven.apache.org</url>

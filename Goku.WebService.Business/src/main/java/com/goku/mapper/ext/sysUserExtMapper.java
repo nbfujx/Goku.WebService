@@ -14,6 +14,6 @@ public interface sysUserExtMapper {
 
     sysUser selectByUsername(String username);
 
-    List<Map<String, String>> selectUserByOrgid(@Param("orgid") String orgid,@Param("orderSort") String orderSort,@Param("orderFiled") String orderFiled);
+    List<sysUser> selectUserByOrgid(@Param("orgid") String orgid,@Param("orderSort") String orderSort,@Param("orderFiled") String orderFiled);
 
 }

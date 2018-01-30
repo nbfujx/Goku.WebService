@@ -25,14 +25,14 @@ public class sysUserControllerImpl implements sysUserController {
 
     @Override
     @RequestMapping(value="getUserPassword", method = RequestMethod.GET)
-    public String getUserPassword(){//(@PathVariable String orgid, @PathVariable Integer pageNo, @PathVariable Integer pageSize,
-                                                       //@PathVariable String orderSort, @PathVariable String orderFiled) {
-        return   JSON.toJSONString (sysuserHandler.selectUserByOrgid("1",1,10,"desc","id"));//sysuserHandler.selectUserByOrgid(orgid,pageNo,pageSize,orderSort,orderFiled);
+    public String getUserPassword(@PathVariable String orgid, @PathVariable Integer pageNo, @PathVariable Integer pageSize,
+                                                       @PathVariable String orderSort, @PathVariable String orderFiled) {
+        return   JSON.toJSONString (sysuserHandler.selectUserByOrgid(orgid,pageNo,pageSize,orderSort,orderFiled));
     }
 
     @Override
     @RequestMapping(value="getUser/{id}", method = RequestMethod.GET)
-    public String  selectByid(@PathVariable String id) {
+    public String  getUserByid(@PathVariable String id) {
         return   JSON.toJSONString (sysuserHandler.selectByid(id));
     }
 }

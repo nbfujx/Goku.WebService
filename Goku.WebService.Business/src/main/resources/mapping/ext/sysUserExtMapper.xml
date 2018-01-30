@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.goku.mapper.ext.sysUserExtMapper">
-    <resultMap id="BaseResultExtMap" type="com.goku.model.sysUser">
+    <resultMap id="sysUserMap" type="com.goku.model.sysUser">
         <id column="id" jdbcType="VARCHAR" property="id" />
         <result column="username" jdbcType="VARCHAR" property="username" />
         <result column="password" jdbcType="VARCHAR" property="password" />
@@ -15,18 +15,20 @@
         <result column="sort" jdbcType="BIGINT" property="sort" />
         <result column="mobile" jdbcType="VARCHAR" property="mobile" />
     </resultMap>
-    <sql id="Base_Ext_Column_List">
+    <sql id="sysUser_Column_List">
         id, username, password, name, sex, status, org_id, email, idcard, is_admin, sort,
         mobile
     </sql>
-    <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultExtMap">
+    <select id="selectByUsername" parameterType="java.lang.String" resultMap="sysUserMap">
         select
-        <include refid="Base_Ext_Column_List" />
+        <include refid="sysUser_Column_List" />
         from sys_user
         where username = #{username,jdbcType=VARCHAR}
     </select>
-    <select id="selectUserByOrgid"  resultType="java.util.HashMap">
-        select  username,password from sys_user where org_id = #{orgid,jdbcType=VARCHAR}
+    <select id="selectUserByOrgid"  parameterType="java.lang.String" resultMap="sysUserMap">
+        select
+         <include refid="sysUser_Column_List" />
+        from sys_user where org_id = #{orgid,jdbcType=VARCHAR}
         <if test="orderFiled != null" >
             order by  ${orderFiled}
             <if test="orderSort != null" >

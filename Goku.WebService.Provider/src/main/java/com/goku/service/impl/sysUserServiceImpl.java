@@ -32,11 +32,11 @@ public class sysUserServiceImpl implements sysUserService {
     }
 
     @Override
-    public List<Map<String, String>> selectUserByOrgid(String orgid,Integer pageNo,Integer pageSize,String orderSort,String orderFiled) {
+    public List<sysUser> selectUserByOrgid(String orgid,Integer pageNo,Integer pageSize,String orderSort,String orderFiled) {
         PageHelper.startPage(pageNo, pageSize);
-        List<Map<String, String>> userall= sysuserhandle.selectUserByOrgid(orgid,orderSort,orderFiled);
-        PageInfo<Map<String, String>> pageInfo =new PageInfo(userall);
-        List<Map<String, String>> users=pageInfo.getList();
+        List<sysUser> userall= sysuserhandle.selectUserByOrgid(orgid,orderSort,orderFiled);
+        PageInfo<sysUser> pageInfo =new PageInfo(userall);
+        List<sysUser> users=pageInfo.getList();
         return users;
     }
 

@@ -11,5 +11,5 @@ import java.util.Map;
 public interface sysUserHandle {
     sysUser selectByid(String id);
     sysUser selectByUsername(String username);
-    List<Map<String, String>> selectUserByOrgid(String orgid,String orderSort,String orderFiled);
+    List<sysUser> selectUserByOrgid(String orgid,String orderSort,String orderFiled);
 }
