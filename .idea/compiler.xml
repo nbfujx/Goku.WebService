@@ -40,7 +40,7 @@
       <module name="Goku.WebService.Provider" target="1.6" />
       <module name="Goku.WebService.Util" target="1.7" />
       <module name="Goku.WebService.Webapi" target="1.7" />
-      <module name="Goku.WebService.WebApi" target="1.7" />
+      <module name="Goku.WebService.WebApi" target="1.6" />
       <module name="Goku.WebService.WebService" target="1.6" />
     </bytecodeTargetLevel>
   </component>
