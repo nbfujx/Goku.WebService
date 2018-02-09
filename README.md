@@ -2,7 +2,7 @@
 
 Goku.Framework.CoreUI.Vue 服务端
 
-#说明
+# 说明
 需同步更新 Goku.Framework.CoreUI.Vue 项目 (https://gitee.com/nbfujx/Goku.Framework.CoreUI.Vue) </br>
 
 # 备注</br>
