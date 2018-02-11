@@ -20,9 +20,6 @@ import java.util.Map;
 public class sysUserHandleImpl implements sysUserHandle {
 
     @Autowired
-    private sysUserMapper sysusermapper;
-
-    @Autowired
     private sysUserExtMapper sysuserextmapper;
 
     @Override
@@ -32,7 +29,7 @@ public class sysUserHandleImpl implements sysUserHandle {
 
     @Override
     public sysUser selectByid(String id) {
-        return sysusermapper.selectByPrimaryKey(id);
+        return sysuserextmapper.selectByPrimaryKey(id);
     }
 
     @Override
