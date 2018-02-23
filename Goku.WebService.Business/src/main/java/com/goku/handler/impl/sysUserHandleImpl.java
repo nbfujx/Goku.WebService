@@ -1,6 +1,7 @@
 package com.goku.handler.impl;
 
 
+import com.goku.handler.SysUserHandle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,7 +15,7 @@ import java.util.List;
  * Created by nbfujx on 2017/10/14.
  */
 @Component
-public class SysUserHandleImpl implements SysUserHandleImpl {
+public class SysUserHandleImpl implements SysUserHandle {
 
     @Autowired
     private SysUserExtMapper sysuserextmapper;
