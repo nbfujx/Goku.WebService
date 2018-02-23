@@ -12,5 +12,5 @@ import java.util.List;
  * Created by nbfujx on 2017/12/30.
  */
 public interface SysMenuExtMapper extends SysMenuMapper {
-    List<SysMenu> getModuleMenuForTree(String ModuleId);
+    List<SysMenu> getModuleMenuForTree(String moduleId);
 }
