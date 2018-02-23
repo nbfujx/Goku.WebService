@@ -15,10 +15,10 @@ import java.util.Date;
 public class SysLogServiceImpl implements SysLogService {
 
     @Autowired
-    SysLogHandle SysLogHandle;
+    SysLogHandle sysLogHandle;
 
     @Override
     public PageInfo getLogForPaging(String username, Date begindate, Date enddate, int pageindex, int pagenum) {
-        return SysLogHandle.getLogForPaging(username, begindate,enddate,pageindex,pagenum);
+        return sysLogHandle.getLogForPaging(username, begindate,enddate,pageindex,pagenum);
     }
 }
