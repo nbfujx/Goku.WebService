@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by nbfujx on 2018/1/9.
  */
-public class tablePage {
+public class TablePage {
     private int code;
     private String msg;
     private long total;

@@ -7,7 +7,7 @@ import java.util.Date;
 /**
  * Created by nbfujx on 2018/1/17.
  */
-public  class dateUtil {
+public  class DateUtil {
 
     public static Date StrtoDate(String DateString, String format) {
         if (DateString != null) {

@@ -4,36 +4,33 @@ package com.goku.handler.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.goku.handler.sysUserHandle;
-import com.goku.mapper.ext.sysUserExtMapper;
-import com.goku.mapper.sysUserMapper;
-import com.goku.model.sysUser;
+import com.goku.mapper.ext.SysUserExtMapper;
+import com.goku.model.SysUser;
 
 import java.util.List;
-import java.util.Map;
 
 
 /**
  * Created by nbfujx on 2017/10/14.
  */
 @Component
-public class sysUserHandleImpl implements sysUserHandle {
+public class SysUserHandleImpl implements SysUserHandleImpl {
 
     @Autowired
-    private sysUserExtMapper sysuserextmapper;
+    private SysUserExtMapper sysuserextmapper;
 
     @Override
-    public sysUser selectByUsername(String username) {
+    public SysUser selectByUsername(String username) {
         return sysuserextmapper.selectByUsername(username);
     }
 
     @Override
-    public sysUser selectByid(String id) {
+    public SysUser selectByid(String id) {
         return sysuserextmapper.selectByPrimaryKey(id);
     }
 
     @Override
-    public List<sysUser> selectUserByOrgid(String orgid,String orderSort,String orderFiled) {
+    public List<SysUser> selectUserByOrgid(String orgid, String orderSort, String orderFiled) {
         return sysuserextmapper.selectUserByOrgid(orgid,orderSort,orderFiled);
     }
 

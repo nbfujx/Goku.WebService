@@ -1,10 +1,10 @@
 package com.goku.handler.impl;
 
-import com.goku.handler.sysUserInfoHandle;
+import com.goku.handler.SysUserInfoHandle;
 
 /**
  * Created by nbfujx on 2017/10/14.
  */
-public class sysUserInfoHandleImpl implements sysUserInfoHandle {
+public class SysUserInfoHandleImpl implements SysUserInfoHandle {
 
 }

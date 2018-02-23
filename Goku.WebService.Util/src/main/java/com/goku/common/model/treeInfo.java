@@ -5,10 +5,10 @@ import java.util.List;
 /**
  * Created by nbfujx on 2018/1/12.
  */
-public class treeInfo {
+public class TreeInfo {
     private String id;
     private String name;
-    private List<treeInfo> children;
+    private List<TreeInfo> children;
 
     public String getId() {
         return id;
@@ -26,11 +26,11 @@ public class treeInfo {
         this.name = name;
     }
 
-    public List<treeInfo> getChildren() {
+    public List<TreeInfo> getChildren() {
         return children;
     }
 
-    public void setChildren(List<treeInfo> children) {
+    public void setChildren(List<TreeInfo> children) {
         this.children = children;
     }
 }

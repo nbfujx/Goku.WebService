@@ -1,10 +1,8 @@
 package com.goku.webapi.controller.impl;
 
-import com.alibaba.fastjson.JSON;
-import com.goku.common.util.dateUtil;
-import com.goku.webapi.controller.sysLogController;
-import com.goku.webapi.handler.sysLogHandle;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.goku.common.util.DateUtil;
+import com.goku.webapi.controller.SysLogController;
+import com.goku.webapi.handler.SysLogHandle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,10 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("sysLog")
-public class sysLogControllerImpl implements sysLogController {
+public class SysLogControllerImpl implements SysLogController {
 
     @Autowired
-    sysLogHandle sysloghandle;
+    SysLogHandle sysloghandle;
 
     @Override
     @RequestMapping("/getLogForPaging")
@@ -28,7 +26,7 @@ public class sysLogControllerImpl implements sysLogController {
                                     @RequestParam(required=false) String  enddate,
                                     @RequestParam int pageNumber, @RequestParam int pageSize){
 
-        String str=sysloghandle.getLogForPaging(username, dateUtil.StrtoDate(begindate,"yyyy-MM-dd"),dateUtil.StrtoDate(enddate,"yyyy-MM-dd"),pageNumber,pageSize);
+        String str=sysloghandle.getLogForPaging(username, DateUtil.StrtoDate(begindate,"yyyy-MM-dd"), DateUtil.StrtoDate(enddate,"yyyy-MM-dd"),pageNumber,pageSize);
         return str;
     }
 

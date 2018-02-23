@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.goku.mapper.ext.sysModuleExtMapper">
-    <resultMap id="SysModuleMap" type="com.goku.model.sysModule">
+<mapper namespace="com.goku.mapper.ext.SysModuleExtMapper">
+    <resultMap id="SysModuleMap" type="com.goku.model.SysModule">
         <id column="id" jdbcType="VARCHAR" property="id" />
         <result column="version" jdbcType="BIGINT" property="version" />
         <result column="description" jdbcType="VARCHAR" property="description" />

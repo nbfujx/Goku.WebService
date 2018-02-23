@@ -1,29 +1,23 @@
 package com.goku.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.goku.handler.sysModuleHandle;
-import com.goku.model.sysModule;
-import com.goku.service.sysModuleService;
+import com.goku.handler.SysModuleHandle;
+import com.goku.model.SysModule;
+import com.goku.service.SysModuleService;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.UUID;
 
 /**
  * Created by nbfujx on 2018/1/1.
  */
 @Service(version = "1.0.0")
-public class sysModuleServiceImpl implements sysModuleService {
+public class SysModuleServiceImpl implements SysModuleService {
 
     @Autowired
-    sysModuleHandle sysmodulehandle;
+    SysModuleHandle sysmodulehandle;
 
     @Override
-    public sysModule selectByid(String id) {
+    public SysModule selectByid(String id) {
         return sysmodulehandle.selectByid(id);
     }
 

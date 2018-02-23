@@ -9,6 +9,6 @@ import java.util.List;
 /**
  * Created by nbfujx on 2018/1/16.
  */
-public interface sysLogService {
+public interface SysLogService {
     PageInfo getLogForPaging(String username, Date begindate, Date enddate, int pageindex, int pagenum);
 }

@@ -1,14 +1,13 @@
 package com.goku.webapi.handler;
 
-import com.goku.model.sysUser;
+import com.goku.model.SysUser;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by nbfujx on 2017/10/15.
  */
-public interface sysUserHandler {
-    List<sysUser> selectUserByOrgid(String orgid, Integer pageNo, Integer pageSize, String orderSort, String orderFiled);
-    sysUser selectByid(String id);
+public interface SysUserHandler {
+    List<SysUser> selectUserByOrgid(String orgid, Integer pageNo, Integer pageSize, String orderSort, String orderFiled);
+    SysUser selectByid(String id);
 }

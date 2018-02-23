@@ -1,7 +1,7 @@
 package com.goku.webapi.controller.impl;
 
-import com.goku.webapi.controller.sysModuleController;
-import com.goku.webapi.handler.sysModuleHandle;
+import com.goku.webapi.controller.SysModuleController;
+import com.goku.webapi.handler.SysModuleHandle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("sysModule")
-public class sysModuleControllerImpl implements sysModuleController {
+public class SysModuleControllerImpl implements SysModuleController {
 
     @Autowired
-    sysModuleHandle sysmodulehandle;
+    SysModuleHandle sysmodulehandle;
 
     @Override
     @RequestMapping("/getModuleForPaging")

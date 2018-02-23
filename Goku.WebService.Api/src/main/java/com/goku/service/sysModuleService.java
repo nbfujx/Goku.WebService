@@ -1,15 +1,12 @@
 package com.goku.service;
 
 import com.github.pagehelper.PageInfo;
-import com.goku.model.sysModule;
-
-import java.util.HashMap;
-import java.util.List;
+import com.goku.model.SysModule;
 
 /**
  * Created by nbfujx on 2018/1/1.
  */
-public interface sysModuleService {
-    sysModule selectByid(String id);
+public interface SysModuleService {
+    SysModule selectByid(String id);
     PageInfo getModuleForPaging();
 }
