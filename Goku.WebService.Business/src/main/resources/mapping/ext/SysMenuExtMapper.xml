@@ -17,6 +17,8 @@
         <result column="url" jdbcType="VARCHAR" property="url" />
     </resultMap>
     <select id="getModuleMenuForTree" parameterType="java.lang.String" resultMap="SysMenuMap">
-
+        select *
+           from sys_menu
+        where module_id= #{ModuleId,jdbcType=VARCHAR} ORDER BY sort
     </select>
 </mapper>

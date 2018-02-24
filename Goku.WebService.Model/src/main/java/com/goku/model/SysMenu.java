@@ -29,6 +29,16 @@ public class SysMenu implements Serializable {
      *
      * @mbg.generated
      */
+    private String label;
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
     private String name;
 
     /**
@@ -112,14 +122,14 @@ public class SysMenu implements Serializable {
      */
     private String url;
 
-    private List<SysMenu>  subMenu;
+    private List<SysMenu>  children;
 
-    public List<SysMenu> getSubMenu() {
-        return subMenu;
+    public List<SysMenu> getChildren() {
+        return children;
     }
 
-    public void setSubMenu(List<SysMenu> subMenu) {
-        this.subMenu = subMenu;
+    public void setChildren(List<SysMenu> children) {
+        this.children = children;
     }
 
     /**
