@@ -22,7 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="Goku.WebService.Api" />
+        <module name="Goku.WebService.Business" />
+        <module name="Goku.WebService.Model" />
+        <module name="Goku.WebService.Provider" />
         <module name="Goku.WebService.util" />
+        <module name="Goku.WebService.Util" />
+        <module name="Goku.WebService.WebApi" />
         <module name="Goku.WebService.WebService" />
       </profile>
     </annotationProcessing>
