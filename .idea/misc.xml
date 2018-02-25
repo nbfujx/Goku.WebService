@@ -49,6 +49,11 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Goku.WebService.Api/pom.xml" />
+        <option value="$PROJECT_DIR$/Goku.WebService.Business/pom.xml" />
+        <option value="$PROJECT_DIR$/Goku.WebService.Model/pom.xml" />
+        <option value="$PROJECT_DIR$/Goku.WebService.Provider/pom.xml" />
+        <option value="$PROJECT_DIR$/Goku.WebService.Util/pom.xml" />
         <option value="$PROJECT_DIR$/Goku.WebService.WebApi/pom.xml" />
         <option value="$PROJECT_DIR$/Goku.WebService.Webapi/pom.xml" />
         <option value="$PROJECT_DIR$/Goku.Webservice.Generate/pom.xml" />

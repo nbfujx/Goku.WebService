@@ -3,12 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Goku.WebService.iml" filepath="$PROJECT_DIR$/Goku.WebService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Goku.WebService.Api/Goku.WebService.Api.iml" filepath="$PROJECT_DIR$/Goku.WebService.Api/Goku.WebService.Api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Goku.WebService.Business/Goku.WebService.Business.iml" filepath="$PROJECT_DIR$/Goku.WebService.Business/Goku.WebService.Business.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Goku.WebService.Model/Goku.WebService.Model.iml" filepath="$PROJECT_DIR$/Goku.WebService.Model/Goku.WebService.Model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Goku.WebService.Provider/Goku.WebService.Provider.iml" filepath="$PROJECT_DIR$/Goku.WebService.Provider/Goku.WebService.Provider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Goku.WebService.Util/Goku.WebService.Util.iml" filepath="$PROJECT_DIR$/Goku.WebService.Util/Goku.WebService.Util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Goku.WebService.WebApi/Goku.WebService.WebApi.iml" filepath="$PROJECT_DIR$/Goku.WebService.WebApi/Goku.WebService.WebApi.iml" />
     </modules>
   </component>
 </project>
